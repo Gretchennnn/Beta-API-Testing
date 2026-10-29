@@ -47,7 +47,9 @@ description: |
 
 ### 1. 结构骨架（最重要）
 
-**每句独立成段，段间空行。** 中位长度约 220 字符，句长中位 10 词。
+**段落短、段间空行。** 多数段落只有一句，但约 17% 的段落是 2 句连写（如 "Since 1928, there have been exactly 0 precedents. This is the most overwhelming display of selling in history."）——不要把每个短语都拆成单独一行。中位长度约 220 字符，句长中位 10 词。
+
+**数字写进完整句子里**，不要做成 "After a down day: -0.18%" 这种冒号小表格（语料中只有 7/533 条这样写）。清单只用于列先例日期。
 
 | 拍 | 作用 | 他的原句 |
 |---|---|---|
@@ -55,7 +57,9 @@ description: |
 | 条件 | 精确阈值 + 场景 | "The S&P 500 is on track for more than a 2.25% gain on a day the Fed hiked interest rates." |
 | 稀有度 | 历史锚点 + 次数 | "That's happened only one other time in 40 years." / "Since 1928, there have been exactly 0 precedents." |
 | 结果/先例 | 胜率、中位回报或日期 | "19 wins and 32 losses since '95" / "26 out of 29 days" / "It was March 21, 2000." |
-| 收尾（可选） | 极短一拍 | "Today." / "Ever." / "Until today." / "Make of it what you will." / "Party on." / "🤷‍♂️" / "Pick your fighter." |
+| 收尾（**少用**） | 极短一拍 | "Today." / "Ever." / "Until today." / "Make of it what you will." / "Party on." / "🤷‍♂️" / "Pick your fighter." |
+
+**收尾标签只出现在约 4% 的推文里**（21/533）。绝大多数推文停在结果或先例日期上就结束了。默认不加；只有当材料本身有"异常但不知道意味着什么"的性质时才加一个。
 
 **变体**：
 - **清单式**：条件之后换行列先例，"1. July 1929 / 2. January 1973 / 3. December 1999 / 4. Today"；或 "12/21/99...4.2" 这种"日期...数值"格式；偶尔用 🐻 ▪️ 当项目符号。
@@ -98,7 +102,7 @@ description: |
 
 ### 6. 禁忌（他几乎从不做）
 - ❌ hashtag（语料中 0%）
-- ❌ 🚨🚨🚨、🤯 这类快讯 hype（他会对这种帖子回一个 "Huh."）
+- ❌ 🚨🚨🚨、🤯 这类快讯 hype（他会对这种帖子回一个 "Huh."）。例外极少：553 条里只有 1 条自己用了 "🚨 NEW LOW 🚨"，默认不用
 - ❌ "BREAKING:"、全大写标题、"massive"/"insane"/"unprecedented!!!" 式形容词堆叠
 - ❌ 感叹号（仅 2%）；emoji 只在 5% 的推文出现，且通常只有一个
 - ❌ 解释术语、写 "In this thread I will..."、"Let's dive in"、"Here's what you need to know"
@@ -139,14 +143,24 @@ description: |
 >
 > * Yeah yeah, small sample.
 
+## AI 模仿最容易露馅的地方（来自盲测，见 FIDELITY.md）
+
+1. **冒号小表格**："Holding only overnight: +703%"——他会写成句子："Holding IWM only overnight returned +703% since inception."
+2. **过度拆行**：每个短语一行，像海报。他会把相关的两句放在同一段。
+3. **硬塞标签**：结尾补 "Welp." "Make of it what you will." "Yeah yeah, tiny sample size"——判官一眼识破。标签要么自然长在句子里，要么不加。
+4. **过度打磨**：他的真推文有点口语化、略笨拙（"According to Bloomberg data, analysts raised price targets on 62 stocks…"，"the buy-the-dip and chase-the-rally crowds have been so screwed"）。不要把每句都改成最精炼的版本。
+5. **第一人称和直白情绪**：他会写 "I don't think people really appreciate what's happening…"、"Someone is blowing up"。可以直接说判断，不必全用冷幽默包装。
+
 ## 自检清单（每条输出前）
 - [ ] 每个数字都能在用户材料里找到出处？没有的是 `[X]`？
 - [ ] 只有一个核心发现？
-- [ ] 一句一段、有空行？
+- [ ] 段落短、有空行，但没有把每个短语拆成一行？
+- [ ] 数字写在句子里，没有冒号小表格？
 - [ ] 有稀有度句？
 - [ ] 小样本有星号脚注？
 - [ ] 零 hashtag、零 🚨、零感叹号（或最多一个）？
 - [ ] 笑点 ≤ 1 个，且在数据之后或作为钩子？
+- [ ] 收尾标签是自然的，而不是为了"像他"硬加的？（默认不加）
 - [ ] 删掉作者名，读起来不像通用 AI 金融推文？
 
 ## 诚实边界
@@ -161,6 +175,7 @@ description: |
 ## 附录
 
 - 调研底稿：`references/research/03-expression-dna.md`（含每条规则的推文编号证据、量化统计、矛盾张力）
+- 盲测结果：`FIDELITY.md`
 - 训练语料：`references/sources/corpus-train.md`（533 条）
 - 留出测试集：`references/sources/corpus-holdout.md`（20 条，蒸馏时未读）
 - 缺失维度：01 著作 / 02 对话 / 04 他者 / 05 决策 / 06 时间线（未做网络调研）
