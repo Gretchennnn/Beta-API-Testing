@@ -1,0 +1,15 @@
+{
+  "rankings": {
+    "A": {"order": [2, 3, 1], "reason": "'Gap-and-craps.' is trader slang like his 'All aboard a derailed train' openers, and the result lines are phrased the way he'd write them; 3 reads plain and natural; 1 is a compressed label summary."},
+    "B": {"order": [2, 1, 3], "reason": "'so screwed' and the rhetorical opener match his casual, slightly snarky asides; 1 is neat parallel-fragment copy; 3 is a colon-label stat block."},
+    "C": {"order": [3, 2, 1], "reason": "'There have been 2 days in the past 25 years when...' mirrors his 'There have been 25,525 trading days' construction, he does use pointing emoji, and 'Someone is blowing up' is blunt; 2 is over-fragmented; 1 is a stiff summary."},
+    "D": {"order": [1, 2, 3], "reason": "Slightly clunky human wording ('According to Bloomberg data', 'downgraded price targets') plus a dramatic opener; 2 is a tightened paraphrase ('Per Bloomberg'); 3 is a labeled table."},
+    "E": {"order": [1, 2, 3], "reason": "Conversational first-person framing in full prose is how he writes; 'Welp.' feels like casualness added on purpose; 3 is a terse data card."},
+    "F": {"order": [3, 2, 1], "reason": "Capitalized 'Confidence' as product shorthand and 'It was no problem at all in 2021. Other than that...' sound like the indicator's own creator; 2 is a flat restatement; 'Not perfect, tho.' in 1 feels tacked on."},
+    "G": {"order": [2, 1, 3], "reason": "The stray line break and loose phrasing ('almost universal gains', 'only true failure was in 1973') look copied from a real post; 1 and 3 are cleaner rewrites, with 3 using colon compression."},
+    "H": {"order": [2, 3, 1], "reason": "A jargon label opener ('Breadth thrust.') plus the odd comma in 'the record, in data going back' read as human; 3 recycles his 'record books' idea; 1 is stripped down to a bare stat."},
+    "I": {"order": [1, 2, 3], "reason": "Plain statement plus 'via @handle' matches his 'via @markets' habit; 2's 'Yeah yeah, tiny sample size' footnote overplays his asterisk trick; 3 paraphrases with stock phrasing ('getting twitchy', '3-for-3')."},
+    "J": {"order": [3, 1, 2], "reason": "'Well then.', 'lurched', 'sucked' and the trailing 'but otherwise...' ellipsis match his wry, understated tone; 1 is a neutral summary; 2's 'Make of it what you will.' is a generic AI sign-off."}
+  },
+  "tells": "The AI versions most often packed the stats into colon-labeled mini-tables ('After a down day: -0.18%', 'Puts bought to open: $19.9B'). His reference tweets never do this; he writes the numbers into full sentences. The other common style was an exaggerated imitation: lots of one-line paragraphs, plus casual tags bolted on at the end ('Welp.', 'Not perfect, tho.', 'Make of it what you will.', 'Yeah yeah, tiny sample size'). These felt inserted, not natural to the sentence. The real tweets showed small imperfections a rewrite smooths out: stray line breaks, odd commas, slightly clunky wording, his habit of capitalizing indicator names, and his trailing-ellipsis understatement. Neutral, evenly polished paraphrases ('Per Bloomberg', 'getting twitchy', '3-for-3') were the other giveaway."
+}
