@@ -1,0 +1,52 @@
+{
+ "A": {
+  "1": "baseline",
+  "2": "skill",
+  "3": "real"
+ },
+ "B": {
+  "1": "skill",
+  "2": "real",
+  "3": "baseline"
+ },
+ "C": {
+  "1": "baseline",
+  "2": "skill",
+  "3": "real"
+ },
+ "D": {
+  "1": "real",
+  "2": "skill",
+  "3": "baseline"
+ },
+ "E": {
+  "1": "real",
+  "2": "skill",
+  "3": "baseline"
+ },
+ "F": {
+  "1": "skill",
+  "2": "baseline",
+  "3": "real"
+ },
+ "G": {
+  "1": "skill",
+  "2": "real",
+  "3": "baseline"
+ },
+ "H": {
+  "1": "baseline",
+  "2": "skill",
+  "3": "real"
+ },
+ "I": {
+  "1": "baseline",
+  "2": "skill",
+  "3": "real"
+ },
+ "J": {
+  "1": "baseline",
+  "2": "skill",
+  "3": "real"
+ }
+}
